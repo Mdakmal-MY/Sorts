@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting Function</title>
+</head>
+<style>
+fieldset{
+	text-align:center;
+	background-color: linen;
+	font-family: 'Calibri';
+	width: 50%;
+	margin:auto;
+}
+</style>
+<script>
+	function sortingValues(){
+		var x = document.getElementById("value").value;
+		var text = x.split("");	
+		output.innerHTML = text;
+		text.sort();
+		outputSorted.innerHTML = text;		
+	}
+</script>
+<body>
+	<fieldset>
+		<label>Enter a value</label> 
+		<input text="value" id="value">
+		<button onclick="sortingValues();">Submit</button>
+		<h3>Unsorted Value</h3>
+		<p id="output">values: <p>
+		<h3>Sorted Value</h3>
+		<p id="outputSorted">values: <p>
+	</fieldset>
+</body>
+</html>
